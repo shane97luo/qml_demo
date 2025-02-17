@@ -1,5 +1,9 @@
+#include "gif_converter.h"
+#include "video_decoder.h"
+
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 
 int main(int argc, char *argv[]) {
 
@@ -11,7 +15,17 @@ int main(int argc, char *argv[]) {
 #endif
   QGuiApplication app(argc, argv);
 
+  // 创建解码器和转换器实例
+  VideoDecoder videoDecoder;
+  GifConverter gifConverter;
+  gifConverter.setDecoder(&videoDecoder); // 关联解码器
+
   QQmlApplicationEngine engine;
+
+  // 注册到 QML context
+  engine.rootContext()->setContextProperty("videoDecoder", &videoDecoder);
+  engine.rootContext()->setContextProperty("gifConverter", &gifConverter);
+
   const QUrl url(QStringLiteral("qrc:/main.qml"));
   QObject::connect(
       &engine, &QQmlApplicationEngine::objectCreated, &app,
