@@ -4,7 +4,14 @@
         <file>javascripts/global.js</file>
         <file>video/Timeline.qml</file>
         <file>video/TrackDelegate.qml</file>
-        <file>common/RButton.qml</file>
+        <file>common/IconButton.qml</file>
         <file>home/Home.qml</file>
-    </qresource>    
+        <file>home/Enter.qml</file>
+        <file>home/SideBar.qml</file>
+        <file>home/Welcome.qml</file>
+        <file>video/WorkSpace.qml</file>
+        <file>home/CloudSpace.qml</file>
+        <file>home/Rss.qml</file>
+        <file>home/Activities.qml</file>
+    </qresource>
 </RCC>

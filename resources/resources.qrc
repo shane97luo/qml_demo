@@ -1,9 +1,7 @@
 <RCC>
     <qresource prefix="/">
-        <file>icons/Frame 9105.png</file>
         <file>icons/udisks/icon_multiple_choice_selected.png</file>
         <file>icons/udisks/icon_multiple_choice_unselect.png</file>
-        <file>icons/Frame 9026.png</file>
         <file>icons/40x40/home40.png</file>
         <file>icons/32x32/icon_set_wifi32.png</file>
         <file>icons/40x40/icon_set_language40.png</file>
@@ -45,6 +43,5 @@
         <file>icons/80x80/button_set_up_nor.png</file>
         <file>icons/80x80/button_set_up_pressed.png</file>
         <file>icons/24x24/icon_warning24.png</file>
-        <file>icons/380x240/pic_constant_temperature.png</file>
     </qresource>
 </RCC>
